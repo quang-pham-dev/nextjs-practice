@@ -1,20 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "strict": true /* Enable all strict type-checking options. */, // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */, // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
+    "module": "esnext" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */, // "lib": [],                             /* Specify library files to be included in the compilation. */
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true
+    "jsx": "preserve" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+    "incremental": true,
+    "rootDir": "src" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */, // "composite": true, /* Enable project compilation */
+    "declaration": true /* Generates corresponding '.d.ts' file. */ // "declarationMap": true,  /* Generates a sourcemap for each corresponding '.d.ts' file. */
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }
