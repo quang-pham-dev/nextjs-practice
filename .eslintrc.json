@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "cypress"],
+  "plugins": ["@typescript-eslint", "cypress", "testing-library"],
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
@@ -9,6 +9,13 @@
     // Uncomment the following lines to enable eslint-config-prettier
     // Is not enabled right now to avoid issues with the Next.js repo
     // "prettier",
+  ],
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    }
   ],
   "env": {
     "es6": true,
